@@ -1,0 +1,132 @@
+/* Base Styles */
+:root {
+    --dark-bg: #1a1a1a;
+    --card-bg: #2a2a2a;
+    --text-primary: #f5f5f5;
+    --text-secondary: #b0b0b0;
+    --accent: #dc143c; /* Crimson */
+    --accent-hover: #b01030;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Profile */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 3px solid var(--accent);
+    overflow: hidden;
+}
+
+.profile-image i {
+    font-size: 60px;
+    color: var(--text-secondary);
+}
+
+.profile h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.profile p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+/* Links Section */
+main {
+    flex: 1;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+    border-left: 4px solid var(--accent);
+}
+
+.link-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background-color: #333333;
+}
+
+.link-card:active {
+    transform: translateY(0);
+}
+
+.link-card i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--accent);
+    width: 30px;
+    text-align: center;
+}
+
+.link-card span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+}

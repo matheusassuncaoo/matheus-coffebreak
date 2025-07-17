@@ -1,0 +1,112 @@
+/* Responsive Styles */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-image i {
+        font-size: 50px;
+    }
+    
+    .profile h1 {
+        font-size: 1.8rem;
+    }
+    
+    .profile p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px 12px;
+    }
+    
+    header {
+        margin-bottom: 30px;
+    }
+    
+    .profile-image {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .profile-image i {
+        font-size: 45px;
+    }
+    
+    .profile h1 {
+        font-size: 1.6rem;
+    }
+    
+    .link-card {
+        padding: 14px 16px;
+    }
+    
+    .link-card i {
+        font-size: 1.3rem;
+        margin-right: 12px;
+    }
+    
+    .link-card span {
+        font-size: 1rem;
+    }
+    
+    footer {
+        margin-top: 40px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Small Mobile Phones */
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 15px 10px;
+    }
+    
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-image i {
+        font-size: 40px;
+    }
+    
+    .profile h1 {
+        font-size: 1.4rem;
+    }
+    
+    .profile p {
+        font-size: 0.9rem;
+    }
+    
+    .link-card {
+        padding: 12px 14px;
+    }
+    
+    .link-card i {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+    .link-card span {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation for link cards on hover - works better on larger screens */
+@media screen and (min-width: 769px) {
+    .link-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+}
